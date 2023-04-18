@@ -1,0 +1,93 @@
+:root {
+    --color-red: rgb(205, 11, 11);
+    --color-green: rgb(0, 118, 0);
+    --color-green2: rgb(0, 62, 0);
+    --color-black: rgb(10, 10, 10);
+    --color-black2: rgb(34, 34, 34);
+    --color-black3: rgb(53, 53, 53);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: transparent;        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(50, 50, 50);    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(255, 255, 255);  /* creates padding around scroll thumb */
+}
+
+header {
+    background-color: white;
+    height: 5rem;
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    font-family: 'chivo mono';
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.495);
+}
+
+.if-logo {
+    height: 5rem;
+}
+
+ul, li{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    font-weight: bold;
+}
+
+a {
+    color: var(--color-black);
+    text-decoration: none;   
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    gap: .4rem;
+}
+
+main {
+    background-image: url("asset/img/frente-ifsc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    height: 82.5vh;
+    width: 97.1vw;
+    padding: 1rem;
+
+}
+
+.pmain {
+    text-indent: 3ch;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    background-color: var(--color-red);
+}

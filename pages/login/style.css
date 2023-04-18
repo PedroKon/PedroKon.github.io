@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-image: linear-gradient(75grad, blue, green, yellow);
+    background-repeat: no-repeat;
+}
+
+body {
+    height: 97.7vh;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'chivo mono';
+
+    height: 100%;
+    margin: 1rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+.login {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 4px 5px 10px black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-login {
+    display: flex;
+    justify-content: center;
+}
